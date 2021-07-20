@@ -1,3 +1,5 @@
+
+//submit form//
 function validateForm() {
   let x = document.forms["myForm"]["fname"].value;
   if (x == "") {
@@ -5,4 +7,6 @@ function validateForm() {
     return false;
   }
 }
+
+//photo slide//
 

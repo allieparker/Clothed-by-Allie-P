@@ -5,7 +5,7 @@
 
   /*======= Section Styles======= */
    head {
-    background-color: khaki;
+    background-color: rgb(241, 221, 193);
   }
    body {
      margin: 0;
@@ -15,10 +15,10 @@
      background: #f7f5f0;
    }
 
-  h1{
-    background-color: #f2f0f3;
-    padding: 5px;
-  }
+   h2 {
+    color:rosybrown;
+    text-decoration-line: underline;
+   }
 
   header {
     text-align: center;
@@ -33,6 +33,9 @@
   }
 
   .profile-image {
+    position: absolute;
+    right: 0;
+    top: -41px;
     text-align: right;
     margin-top: 50px;
     width: 200px;
@@ -54,12 +57,15 @@
   }
 
   .container {
-    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 0;
+    padding-top: 0;
+    padding-right: 10px;
     padding: 10px;
-    background: #fff;
-    border-radius: 5px;
-    margin: 30px auto;
-    box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
+    
     
    
   }
@@ -94,25 +100,14 @@
    margin: 20px;
    padding: 20px 20px;
    max-width: 500px;
-   text-align: left;
+   text-align: center;
    background: rgb(247, 228, 177);
    border: 4px dashed rgb(247, 198, 239);
    border-radius: 8px;
+   color:rgb(148, 139, 185);
    
  }
  .card2 {
-  display: flex;
-  flex-direction: row;
-   margin: 20px;
-   padding: 20px 20px;
-   max-width: 500px;
-   text-align: left;
-   background: rgb(247, 228, 177);
-   border: 4px dashed rgb(247, 198, 239);
-   border-radius: 8px;
-   
- }
- .card3 {
   display: flex;
   flex-direction: row;
    margin: 20px;
@@ -122,13 +117,10 @@
    background: rgb(247, 228, 177);
    border: 4px dashed rgb(247, 198, 239);
    border-radius: 8px;
-   list-style-type: none;
-   
+   color:rgb(148, 139, 185);
    
  }
- ul.sample {
-  padding: 0;
-}
+ 
 
 
 footer {
@@ -143,6 +135,10 @@ footer .copyright {
   margin-bottom: 0px;
   font-size: .75em;
   font: sans-serif;
+}
+
+.imgnav {
+  position: relative;
 }
  
    /* Link Styles */
@@ -172,41 +168,26 @@ footer .copyright {
     width: 100%;
    }
 
-   .container {
+  .card1, .card2 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-evenly;
-  }
-
-  .card1, .card2, .card3 {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  flex-grow: 1;
+    flex-grow: 1;
+    max-width: 500px;
+    min-width: 300px
   }
    
    /*=====Media Query===== */
-   @media screen and (min-width: 0) and (max-width: 1025px){
+   @media only screen and (max-width: 1025px){
      
-     .flex {
+     /*.flex {
          display: flex;
          max-width: 1200px;
          justify-content: space-around;
          margin-top: 0;
          flex-wrap: wrap;
-     }
+     }*/
 
-     header .profile-image {
-      display: none;
-      max-width: 1200px;
-      min-width: 760px;
-    }
-   
-     header {
-       min-height: 450px;
-      
-     }
    
      .nav {
        max-width: 1200px;
@@ -214,6 +195,15 @@ footer .copyright {
        margin-right: 20%;
        color: white;
      }
+
+     /*.peepit {
+       display: flex;
+       justify-content: space-evenly;
+       margin-top: 0;
+       padding-top: 0;
+       padding-right: 10px;
+       padding: 10px;
+     }*/
    
      main {
        padding-top: 50px;
@@ -224,10 +214,16 @@ footer .copyright {
        max-width: 1200px;
        margin: 40px auto;
      }
-
-     .container {
-       display: table-column;
-       min-width: 0px;
-     }
-
+    }
+    @media only screen and (max-width: 622px){
+      header .profile-image {
+        display: none;
+        flex-grow: inherit;
+      }
+    }
+      @media only screen and (max-width: 300px){
+      .container {
+        display: flex;
+        
+      }
     }
