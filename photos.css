@@ -13,10 +13,10 @@
     border-radius: 8px;
 }
 .preview{
-    width:15%;
-    margin-left:7%;
+    width:25%;
     border: 3px solid rgb(249, 250, 252);
     background-color: white;
+
 
 }
 
@@ -36,3 +36,16 @@ button{
     border: 2px dashed rgb(181, 213, 243);
     border-radius: 20px
 }
+
+@media only screen and (min-width: 622px){
+    .preview {
+      width: 40%;
+    }
+
+  }
+
+  @media only screen and (min-width: 1025px){
+    .preview {
+      width: 20%;
+    }
+  }

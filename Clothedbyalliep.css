@@ -33,6 +33,7 @@
   }
 
   .profile-image {
+    display: none;
     position: absolute;
     right: 0;
     top: -41px;
@@ -84,7 +85,7 @@
     list-style-type: none;
     margin: 5px;
     padding: 2px;
-    flex-direction: row-reverse;
+    flex-direction: column-reverse;
   }
   .nav .name {
     display: none;
@@ -109,7 +110,7 @@
  }
  .card2 {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
    margin: 20px;
    padding: 20px 20px;
    max-width: 500px;
@@ -140,6 +141,13 @@ footer .copyright {
 .imgnav {
   position: relative;
 }
+
+.images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+}
  
    /* Link Styles */
    a {
@@ -159,9 +167,6 @@ footer .copyright {
     border-color: #f7f5f3;
   }
 
-  /*====Hamburger Nav =====*/
-  
-   
    /*===== Flexbox =====*/
    .clothedbyalliep-logo {
     display: flex;
@@ -171,14 +176,13 @@ footer .copyright {
   .card1, .card2 {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     flex-grow: 1;
     max-width: 500px;
     min-width: 300px
   }
    
    /*=====Media Query===== */
-   @media only screen and (max-width: 1025px){
+   @media only screen and (min-width: 1025px){
      
      /*.flex {
          display: flex;
@@ -196,14 +200,9 @@ footer .copyright {
        color: white;
      }
 
-     /*.peepit {
-       display: flex;
-       justify-content: space-evenly;
-       margin-top: 0;
-       padding-top: 0;
-       padding-right: 10px;
-       padding: 10px;
-     }*/
+     .images {
+       flex-wrap: nowrap;
+     }
    
      main {
        padding-top: 50px;
@@ -215,15 +214,25 @@ footer .copyright {
        margin: 40px auto;
      }
     }
-    @media only screen and (max-width: 622px){
+    @media only screen and (min-width: 622px){
       header .profile-image {
-        display: none;
-        flex-grow: inherit;
+        display: block;
+        /*flex-grow: inherit;*/
+      }
+
+      .images {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
       }
     }
-      @media only screen and (max-width: 300px){
+      @media only screen and (min-width: 300px){
       .container {
         display: flex;
         
+      }
+
+      .nav {
+        flex-direction: row-reverse;
       }
     }
