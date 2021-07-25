@@ -46,7 +46,7 @@
     transition: all .5s;
    }
 
-    /* ***CLASS REQUIRMENT OF CSS ANIMATION SPINNER-SEE PROFILE PHOTO*** */
+    /* ***CLASS REQUIRMENT OF CSS ANIMATION SPINNER 3 OF 3-SEE PROFILE PHOTO*** */
     .profile-image:hover {
         transform: scale(1.2) rotate(360deg);
     }
@@ -126,8 +126,6 @@
    border: 4px dashed rgb(247, 198, 239);
    border-radius: 8px;
    color:rgb(148, 139, 185);
-  
-   
  }
 
 #contactform {
@@ -172,7 +170,7 @@ footer .copyright {
     max-width: 500px;
     min-width: 300px
 }
-/* ***CLASS REQUIRMENT OF Css animation*** */
+/* ***CLASS REQUIRMENT OF CSS ANIMATION 1 OF 3*** */
 p {
     animation-duration: 3s;
     animation-name: slidein;
@@ -195,7 +193,7 @@ p {
         width: 100%;
     }
 }
-
+/* ***CLASS REQUIRMENT OF CSS ANIMATION 2 OF 3*** */
 .lds-heart {
     display: inline-block;
     position: relative;
