@@ -5,54 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http=equiv ="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="Clothedbyalliep.css">
-    
     <link rel="stylesheet" href="photos.css">
-    <script src="photos.js"></script>
-    <script src="form.css"></script>
-    <script src="clothedbyalliep.js"></script>
 
 </head>
   
-  <body>
- 
-   <header>
- 
-    <div class="main-nav">
-        <ul class="nav">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Photos</a></li>
-          <li><a href="#">Order</a></li>
-        </ul>
-    </div>
-      <div class="imgnav">
-    
-      <img src="img/allieparkerprofile3.png" alt="allieparker profile-image" class="profile-image"/>
-      <img src="img/clothedbyalliep-logo.jpg" alt="clothedbyalliep-logo" class="clothedbyalliep-logo"/>
-     </div>
-    </header> 
+<body>
+    <header>
+        <div class="main-nav">
+            <ul class="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Photos</a></li>
+                <li><a href="#">Order</a></li>
+            </ul>
+        </div>
+        <div class="imgnav">
+            <img src="img/allieparkerprofile3.png" alt="allieparker profile-image" class="profile-image" />
+            <img src="img/clothedbyalliep-logo.jpg" alt="clothedbyalliep-logo" class="clothedbyalliep-logo" />
+        </div>
+    </header>
 
-      <div class="container">
+    <div class="container">
         <div class="card1">
-          <h2>Bio</h2>
-          <p>Hi! My name is Allie Parker! I have been a Professional Wrestler since 2010. Over time I became frustrated with finding someone that could/would make my wrestling gear I loved.</p>
-          <p>This frustration drove me to start creating my own gear, and here I am now! Creating lingerie, Pro Wrestling gear, and bridal since 2019.</p>
-          <p>Now I've created over 100 unique pieces, and would love to create something for you!</p>
-        </div> 
-      
+            <h2>Bio</h2>
+            <p>Hi! My name is Allie Parker! I have been a Professional Wrestler since 2010. Over time I became frustrated with finding someone that could/would make my wrestling gear I loved.</p>
+            <p>This frustration drove me to start creating my own gear, and here I am now! Creating lingerie, Pro Wrestling gear, and bridal since 2019.</p>
+            <p>Now I've created over 100 unique pieces, and would love to create something for you!</p>
+            <div class="lds-heart"><div></div></div>
+        </div>
+
         <div class="contact">
             <h2>Contact</h2>
+            <!--***CLASS REQUIRMENT OF javascript form returning 'Thank you'***-->
             <form id="contactform" onsubmit="return validateForm()">
                 <fieldset>
                     <label for="name">Name</label>
-                    <input type="text" name="name" id="name" value="Name" onfocus="if(this.value=='Name')this.value='';" onblur="if(this.value=='')this.value='Name';" />
+                    <input type="text" name="name" id="name" onfocus="if(this.value=='Name')this.value='';" onblur="if(this.value=='')this.value='Name';" />
                     <br />
 
                     <label for="email">E-mail</label>
-                    <input type="text" name="email" id="email" value="Email" onfocus="if(this.value=='Email')this.value='';" onblur="if(this.value=='')this.value='Email';" />
-                    <br/>
+                    <input type="text" name="email" id="email" onfocus="if(this.value=='Email')this.value='';" onblur="if(this.value=='')this.value='Email';" />
+                    <br />
 
                     <label for="subject">Subject</label>
-                    <input type="text" name="subject" id="subject" value="Subject" onfocus="if(this.value=='Subject')this.value='';" onblur="if(this.value=='')this.value='Subject';" />
+                    <input type="text" name="subject" id="subject" onfocus="if(this.value=='Subject')this.value='';" onblur="if(this.value=='')this.value='Subject';" />
 
                     <label for="message"></label>
                     <textarea name="message" id="message" cols="30" rows="10"></textarea>
@@ -61,33 +56,34 @@
                     <input type="submit" name="submit" id="submit" value="Send" />
                 </fieldset>
             </form>
-       
+
         </div>
 
         <div>
-       
-          <div class="peepit">
-            <p id = "image">Check it.<p>
+            <div class="peepit">
+                <p id="image">Look Book<p>
+            </div>
+            <div class="images">
+               <!--***CLASS REQUIRMENT OF javascript form returning 'Thank you'*** -->
+                <img class="preview" src="img/warriorprincess.png" alt="Warrior Princess" onmouseover="upDate(this)" onmouseout="unDo()">
+                <img class="preview" src="img/outrunnersgear.png" alt="Cyber City" onmouseover="upDate(this)" onmouseout="unDo()">
+                <img class="preview" alt="All the Glitters" src="img/mylogear.png" onmouseover="upDate(this)" onmouseout="unDo()">
+                <img class="preview" src="img/rainbowlingerie.png" alt="Rainbow Bae" onmouseover="upDate(this)" onmouseout="unDo()">
+                <img class="preview" alt="Neon Nights" src="img/neonboots.png" onmouseover="upDate(this)" onmouseout="unDo()">
+                <img class="preview" src="img/tylerrust1.png" alt="WWE NXT Dimond Mine" onmouseover="upDate(this)" onmouseout="unDo()">
+                <img class="preview" src="img/kaylakassidygear.png" alt="Chain Gang" onmouseover="upDate(this)" onmouseout="unDo()">
+                <img class="preview" src="img/truthgear.png" alt="Cyber Punk" onmouseover="upDate(this)" onmouseout="unDo()">
+                <img class="preview" src="img/mykagear.png" alt="LUCHA LUCHA" onmouseover="upDate(this)" onmouseout="unDo()">
+                <img class="preview" src="img/rockersgear.png" alt="Shaun n Marty" onmouseover="upDate(this)" onmouseout="unDo()">
+
+
+            </div>
         </div>
-          <div class="images">
-              <img class="preview" src="img/warriorprincess.png" alt="Warrior Princess" onmouseover="upDate(this)" onmouseout="unDo()">
-              <img class="preview" src="img/outrunnersgear.png" alt="Cyber City" onmouseover="upDate(this)" onmouseout="unDo()">
-              <img class="preview" alt="All the Glitters" src="img/mylogear.png" onmouseover="upDate(this)" onmouseout="unDo()">
-              <img class="preview" src="img/rainbowlingerie.png" alt="Rainbow Bae" onmouseover="upDate(this)" onmouseout="unDo()">
-              <img class="preview" alt="Neon Nights" src="img/neonboots.png" onmouseover="upDate(this)" onmouseout="unDo()">
-              <img class="preview" src="img/tylerrust1.png" alt="WWE NXT Dimond Mine" onmouseover="upDate(this)" onmouseout="unDo()">
-              <img class="preview" src="img/kaylakassidygear.png" alt="Chain Gang" onmouseover="upDate(this)" onmouseout="unDo()">
-              <img class="preview" src="img/truthgear.png" alt="Cyber Punk" onmouseover="upDate(this)" onmouseout="unDo()">
-              <img class="preview" src="img/mykagear.png" alt="LUCHA LUCHA" onmouseover="upDate(this)" onmouseout="unDo()">
-              <img class="preview" src="img/rockersgear.png" alt="Shaun n Marty" onmouseover="upDate(this)" onmouseout="unDo()">
-
-
-          </div>
+        <footer>
+            <p class="copyright">Copyright 2021, Allie Parker Wrestling</p>
+        </footer>
     </div>
-   
-    <footer>
-      <p class="copyright">Copyright 2021, Allie Parker Wrestling</p>
-    </footer>
-  </div>
-  </body>
+    <script src="photos.js"></script>
+    <script src="clothedbyalliep.js"></script>
+</body>
   </html>
