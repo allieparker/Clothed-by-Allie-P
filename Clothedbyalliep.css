@@ -1,9 +1,9 @@
-   /* =====Global Layout Set-up===== */
+   /* =====Global Layout===== */
    * {
     box-sizing: border-box;
   }
 
-  /*======= Section Styles======= */
+  /*=======Section Styles======= */
    head {
     background-color: rgb(241, 221, 193);
   }
@@ -12,11 +12,11 @@
      padding: 0;
      text-align: center;
      font-family: Georgia, 'Times New Roman', Times, serif;
-     background: #f7f5f0;
+     background: rgb(254, 255, 239);
    }
 
    h2 {
-    color:rosybrown;
+    color: rgb(215, 164, 103);
     text-decoration-line: underline;
    }
 
@@ -46,6 +46,11 @@
     transition: all .5s;
    }
 
+    /* ***CLASS REQUIRMENT OF CSS ANIMATION SPINNER-SEE PROFILE PHOTO*** */
+    .profile-image:hover {
+        transform: scale(1.2) rotate(360deg);
+    }
+
    .clothedbyalliep-logo {
     top: 100%;
     text-align: right;
@@ -67,12 +72,10 @@
     padding-right: 10px;
     padding: 10px;
     
-    
-   
   }
   .main-nav { 
     width: 100%;
-    background: rgb(248, 231, 212);
+    background: rgb(240, 255, 213);
     min-height: 5px;
     padding: 0px;
     position: relative;
@@ -83,51 +86,57 @@
     justify-content: space-around;
     font-weight: 500;
     list-style-type: none;
-    margin: 5px;
-    padding: 2px;
+    margin-top:0px;
+    margin-bottom: 0px;
+    padding: 0;
     flex-direction: column-reverse;
+    
   }
   .nav .name {
     display: none;
   }
   .nav li {
+   color:rgb(255, 253, 205);
    padding: 10px 10px 10px;
   }
   .nav a {
    transition: all .5s;
  }
 
- .card1 {
+.card1 {
+    margin: 20px;
+    padding: 20px 20px;
+    max-width: 500px;
+    text-align: center;
+    background: rgb(241, 248, 225);
+    border: 4px dashed rgb(247, 198, 239);
+    border-radius: 8px;
+    color: rgb(243, 155, 76);
+}
+   
+ .contact {
+   display: flex;
+   flex-direction: column;
    margin: 20px;
    padding: 20px 20px;
    max-width: 500px;
    text-align: center;
-   background: rgb(247, 228, 177);
+   line-height: 1.6;
+   background: rgb(241, 248, 225);
    border: 4px dashed rgb(247, 198, 239);
    border-radius: 8px;
    color:rgb(148, 139, 185);
    
  }
- .card2 {
-  display: flex;
-  flex-direction: column;
-   margin: 20px;
-   padding: 20px 20px;
-   max-width: 500px;
-   text-align: center;
-   background: rgb(247, 228, 177);
-   border: 4px dashed rgb(247, 198, 239);
-   border-radius: 8px;
-   color:rgb(148, 139, 185);
-   
- }
- 
 
+#contactform {
+    color: rgb(215, 164, 103);
+}
 
 footer {
-  width: 100%;
-  min-height: 30px;
-  padding: 20px 0 20px 20px;
+    width: 100%;
+    min-height: 30px;
+    padding: 20px 0 20px 20px;
 }
 
 footer .copyright {
@@ -146,13 +155,28 @@ footer .copyright {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 100%;
+  max-width: 95%;
+  
 }
+
+.clothedbyalliep-logo {
+    display: flex;
+    width: 100%;
+}
+
+.card1, .contact {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    max-width: 500px;
+    min-width: 300px
+}
+
  
-   /* Link Styles */
+   /*===Link Styles===*/
    a {
      text-decoration: none;
-     color: #f0a580;
+     color: rgb(215, 164, 103);
      font-family: Georgia, 'Times New Roman', Times, serif;
      font-size: large;
    }
@@ -160,39 +184,16 @@ footer .copyright {
      color: #f7f5fa;
    }
 
-   .profile-image:hover {
-    transform: scale(1.2) rotate(360deg);
-  }
   .card:hover {
     border-color: #f7f5f3;
   }
 
-   /*===== Flexbox =====*/
-   .clothedbyalliep-logo {
-    display: flex;
-    width: 100%;
-   }
-
-  .card1, .card2 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    max-width: 500px;
-    min-width: 300px
-  }
+  
    
-   /*=====Media Query===== */
+   /*=====Media Query===== 
+       ***CLASS REQUIRMENT OF 1 OF 2 MEDIA QUERY***
+   */
    @media only screen and (min-width: 1025px){
-     
-     /*.flex {
-         display: flex;
-         max-width: 1200px;
-         justify-content: space-around;
-         margin-top: 0;
-         flex-wrap: wrap;
-     }*/
-
-   
      .nav {
        max-width: 1200px;
        display: flex;
@@ -214,10 +215,12 @@ footer .copyright {
        margin: 40px auto;
      }
     }
+/*=====Media Query===== 
+       ***CLASS REQUIRMENT OF 2 OF 2 MEDIA QUERY***
+   */
     @media only screen and (min-width: 622px){
       header .profile-image {
         display: block;
-        /*flex-grow: inherit;*/
       }
 
       .images {
@@ -226,12 +229,21 @@ footer .copyright {
         justify-content: space-evenly;
       }
     }
-      @media only screen and (min-width: 300px){
+/*=====Media Query===== 
+       ***CLASS REQUIRMENT OF 3 OF 2 MEDIA QUERY***
+   */
+      @media only screen and (min-width: 320px){
       .container {
         display: flex;
         
       }
 
+    }
+/*=====Media Query===== 
+       ***CLASS REQUIRMENT OF 4 OF 2 MEDIA QUERY***
+   */
+    @media only screen and (min-width: 350px){
+      
       .nav {
         flex-direction: row-reverse;
       }

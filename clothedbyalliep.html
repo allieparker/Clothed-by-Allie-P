@@ -1,39 +1,20 @@
 <!doctype html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http=equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="Clothedbyalliep.css">
-  <link rel="stylesheet" href="hamburgermenu.css">
-  <link rel="stylesheet" href="photos.css">
-  <script src = "photos.js"></script>
-  <script src = "clothedbyalliep.js"></script>
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http=equiv ="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Clothedbyalliep.css">
+    
+    <link rel="stylesheet" href="photos.css">
+    <script src="photos.js"></script>
+    <script src="form.css"></script>
+    <script src="clothedbyalliep.js"></script>
+
 </head>
   
   <body>
-   <!--<div class="menu-wrap">
-     <input type="checkbox" class="toggler">
-     <div class="hamburger"><div></div></div>
-     <div class="menu">
-       <div>
-         <div>
-           <ul>
-             <li><a href="#">home</a></li>
-             <li><a href="#">home</a></li>
-             <li><a href="#">home</a></li>
-           </ul>
-         </div>
-       </div>
-     </div>
-   </div>
-   <header class="showcase">
-     <div class="container showcase-inner">
-    <a href="#" class="btn">Read More</a>
-     </div>-->
-
-
-
+ 
    <header>
  
     <div class="main-nav">
@@ -45,7 +26,7 @@
     </div>
       <div class="imgnav">
     
-      <img src="img/allieparkerprofile.png" alt="allieparker profile-image" class="profile-image"/>
+      <img src="img/allieparkerprofile3.png" alt="allieparker profile-image" class="profile-image"/>
       <img src="img/clothedbyalliep-logo.jpg" alt="clothedbyalliep-logo" class="clothedbyalliep-logo"/>
      </div>
     </header> 
@@ -54,40 +35,56 @@
         <div class="card1">
           <h2>Bio</h2>
           <p>Hi! My name is Allie Parker! I have been a Professional Wrestler since 2010. Over time I became frustrated with finding someone that could/would make my wrestling gear I loved.</p>
-          <p>This frustration drove me to start creating my own gear, and here I am now! Creating lingerie, Pro Wretling gear, and bridal since 2019.</p>
+          <p>This frustration drove me to start creating my own gear, and here I am now! Creating lingerie, Pro Wrestling gear, and bridal since 2019.</p>
           <p>Now I've created over 100 unique pieces, and would love to create something for you!</p>
         </div> 
       
-        <div class="card2">
-          <h2>Contact</h2><P>
-            </P>
-            <form name="myForm" onsubmit="return validateForm('Thank you for your interest!')" action="result.html"
-            method="post">
-              Email: <input type="text" name="fname">
-             <input type="submit" value="Submit">
-            </form>
+        <div class="contact">
+            <h2>Contact</h2>
+            <form id="contactform" onsubmit="return validateForm()">
+                <fieldset>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" value="Name" onfocus="if(this.value=='Name')this.value='';" onblur="if(this.value=='')this.value='Name';" />
+                    <br />
 
-            
-          
+                    <label for="email">E-mail</label>
+                    <input type="text" name="email" id="email" value="Email" onfocus="if(this.value=='Email')this.value='';" onblur="if(this.value=='')this.value='Email';" />
+                    <br/>
+
+                    <label for="subject">Subject</label>
+                    <input type="text" name="subject" id="subject" value="Subject" onfocus="if(this.value=='Subject')this.value='';" onblur="if(this.value=='')this.value='Subject';" />
+
+                    <label for="message"></label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                    <div id="error"></div>
+                    <input type="submit" name="submit" id="submit" value="Send" />
+                </fieldset>
+            </form>
+       
         </div>
+
         <div>
        
           <div class="peepit">
-            <p id = "image">Peep the scene.<p>
+            <p id = "image">Check it.<p>
         </div>
-      <div class="images">
-        <img class = "preview" alt = "mylogear" src = "img/mylogear.png" onmouseover = "upDate(this)" onmouseout = "unDo()">
-    
-        <img class = "preview" src = "img/rainbowlingerie.png" alt = "rainbowlingerie" onmouseover = "upDate(this)" onmouseout = "unDo()">
+          <div class="images">
+              <img class="preview" src="img/warriorprincess.png" alt="Warrior Princess" onmouseover="upDate(this)" onmouseout="unDo()">
+              <img class="preview" src="img/outrunnersgear.png" alt="Cyber City" onmouseover="upDate(this)" onmouseout="unDo()">
+              <img class="preview" alt="All the Glitters" src="img/mylogear.png" onmouseover="upDate(this)" onmouseout="unDo()">
+              <img class="preview" src="img/rainbowlingerie.png" alt="Rainbow Bae" onmouseover="upDate(this)" onmouseout="unDo()">
+              <img class="preview" alt="Neon Nights" src="img/neonboots.png" onmouseover="upDate(this)" onmouseout="unDo()">
+              <img class="preview" src="img/tylerrust1.png" alt="WWE NXT Dimond Mine" onmouseover="upDate(this)" onmouseout="unDo()">
+              <img class="preview" src="img/kaylakassidygear.png" alt="Chain Gang" onmouseover="upDate(this)" onmouseout="unDo()">
+              <img class="preview" src="img/truthgear.png" alt="Cyber Punk" onmouseover="upDate(this)" onmouseout="unDo()">
+              <img class="preview" src="img/mykagear.png" alt="LUCHA LUCHA" onmouseover="upDate(this)" onmouseout="unDo()">
+              <img class="preview" src="img/rockersgear.png" alt="Shaun n Marty" onmouseover="upDate(this)" onmouseout="unDo()">
 
-        <img class = "preview" src = "img/truthgear.jpg" alt = "Truth Magnium Tights" onmouseover = "upDate(this)" onmouseout = "unDo()">
-        <img class = "preview" src = "img/tylerrustgear.png" alt = "Tyler Rust Trunks" onmouseover = "upDate(this)" onmouseout = "unDo()">
-        <!-- <img class = "preview" src = "img/truth magnum wrestling gear.HEIC" alt = "Truth Magnium Tights" onmouseover = "upDate(this)" onmouseout = "unDo()"> -->
-      </div>
+
+          </div>
     </div>
-      
-      
-    </main>
+   
     <footer>
       <p class="copyright">Copyright 2021, Allie Parker Wrestling</p>
     </footer>
