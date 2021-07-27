@@ -1,5 +1,4 @@
 
-
  //*** CLASS REQUIRMENT OF JAVASCRIPT CHANGING TEXT WHEN HOVERED OVER PHOTOS***  
 function upDate(element) {
     document.getElementById('image').innerHTML = element.alt;
