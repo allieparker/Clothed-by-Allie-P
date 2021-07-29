@@ -1,13 +1,10 @@
 # Clothed-by-Allie-P 
 Front-End Project for Code Louisville (2021)
 </p>
-Summary: Clothed by Allie Parker is a landing page to order custom costumes. On this page you can find a contact form for more details on how to order, and sample of some of my work.
+Summary: Clothed by Allie Parker is a landing page to order custom costumes designed and sewed by me! On this page you can find a contact form for more details on how to order, a sample of some of my work, and a quick biography of how I got started. This website site was built as a class project for Code Louisville Front-End course using the tools we learned via TreeHouse videos. Languages I learned/used for this website include HTML, CSS, and JavaScript. Programs used to create this webiste include VS code, Git Bash, and Treehouse learning
 </P>
  </p><strong>Installation:  </strong>
- 
  </p><strong>To run my project, open the clothedbyalliep.html file in any internet browser</strong>
- </p>
- Programs used: VS code, Git Bash, Treehouse learning
  </p>
 <strong>Class Requirments included for class project:</strong>
 <P>-Minimum of TWO Media Queries, designed with “mobile first” principles in mind <strong>(8 total media queries)</strong>
